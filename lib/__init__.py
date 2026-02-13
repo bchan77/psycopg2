@@ -65,6 +65,7 @@ from psycopg2._psycopg import (                     # noqa
 
 from psycopg2.policies import ClusterAwareLoadBalancer,TopologyAwareLoadBalancer
 from psycopg2.loadbalanceproperties import LoadBalanceProperties
+from psycopg2.xcluster_dr import XClusterDRPool
 # Register default adapters.
 
 from psycopg2 import extensions as _ext
