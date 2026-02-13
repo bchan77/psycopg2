@@ -11,6 +11,7 @@ env
 env?
 .idea
 .tox
+*.cproj
 .vscode/
 /rel
 /wheels

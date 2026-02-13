@@ -539,7 +539,7 @@ ext.append(Extension("psycopg2._psycopg", sources,
                      undef_macros=[]))
 
 try:
-    f = open("README.rst")
+    f = open("README.md")
     readme = f.read()
     f.close()
 except Exception:
@@ -558,6 +558,7 @@ setup(name="psycopg2-yugabytedb",
       python_requires='>=3.6',
       description=readme.split("\n")[0],
       long_description="\n".join(readme.split("\n")[2:]).lstrip(),
+      long_description_content_type='text/markdown',
       classifiers=[x for x in classifiers.split("\n") if x],
       data_files=data_files,
       package_dir={'psycopg2': 'lib'},
